@@ -51,7 +51,7 @@ spring:
             - Path=/api/notifications/**
 
 jwt:
-  secret: shopsphere-secret-key-must-be-at-least-256-bits-long-for-hmac-sha
+  secret: ${JWT_SECRET:shopsphere-secret-key-must-be-at-least-256-bits-long-for-hmac-sha}
 
 eureka:
   client:
